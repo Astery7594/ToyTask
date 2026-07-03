@@ -7,7 +7,6 @@ public class backgroundChangeColor : MonoBehaviour
     public float speed = 0.3f;//slowly change color
     public Color dColor = new Color(); // dark blue (adding in enging
     public Color bColor = new Color(); //bright blue (adding in enging
-
     private float t = 0;//time++
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -24,5 +23,6 @@ public class backgroundChangeColor : MonoBehaviour
             t += Time.deltaTime * speed; //time++
             Camera.main.backgroundColor = Color.Lerp(bColor, dColor, t); //change color
         }
+        
     }
 }

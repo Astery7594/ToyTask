@@ -597,7 +597,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5e6afcda48a9d245bd6932df81a3c14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::backgroundChangeColor
-  tMax: 5
+  duringTime: 3
   speed: 0.3
   dColor: {r: 0.14773941, g: 0.18443309, b: 0.3773585, a: 1}
   bColor: {r: 0.31639373, g: 0.62556165, b: 0.8490566, a: 1}
