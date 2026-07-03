@@ -59,7 +59,6 @@ public class Fish : MonoBehaviour
             
         }
     }
-
     void FlipSprite() //when fish aproch the egde, flip their image
     {
         if (spriteRenderer != null) //check there's a sprite
