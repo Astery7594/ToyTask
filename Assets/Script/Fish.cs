@@ -13,7 +13,8 @@ public class Fish : MonoBehaviour
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>(); //get image of fish
-        FlipSprite(); //a function to flip the image
+        moveX = transform.position; //make sure the fish will start swimming at the location where it's spawned rather than at vector2.zero
+        FlipSprite(); //a function to flip the image because when I draw them I draw them oppside way... 
     }
 
     // Update is called once per frame
@@ -23,7 +24,7 @@ public class Fish : MonoBehaviour
         mousePos.z = 0;
         float d = Vector2.Distance(mousePos, transform.position); //distance between mouse position && object positiom
 
-        if (d < 5f) // mouse distance near fish : 5f
+        if (d < 1f) // mouse distance near fish : 1f
         {
             //When the mouse approaches the fish, the fish will stop swimming and turn towards the direction of the mouse.
             Vector2 direction = mousePos - transform.position;
