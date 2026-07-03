@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 
 public class Fish : MonoBehaviour
 {
+    //this scrpit was used to make prefab object move and turn 
     public float speed =1f; //speed
     public SpriteRenderer spriteRenderer; //get sprite
     private Vector2 moveX; //move in x deriction

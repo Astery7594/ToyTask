@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class FishSpawner : MonoBehaviour
 {
+    // This code is used by button to spwan fish or destory fish
     public GameObject fish;
     public List<Sprite> fishSprites = new List<Sprite>(); //list used to change fish's image
     public int maxFishNum = 10; // maximased spawned fish's number
