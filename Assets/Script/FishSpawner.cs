@@ -49,7 +49,7 @@ public class FishSpawner : MonoBehaviour
      public Vector2 GetRandomP()
     {
         //make fish ramdom spawned in screen.
-        Vector2 p = Camera.main.ScreenToWorldPoint(new Vector2(Random.Range(5,Screen.width), Random.Range(5,Screen.height-15f)));
+        Vector2 p = Camera.main.ScreenToWorldPoint(new Vector2(Random.Range(5,Screen.width), Random.Range(5,Screen.height-15f)));// those 5 and 15 is to make sure that fish won't spawn out of the screen
         return p;
     }
 
